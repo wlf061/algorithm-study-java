@@ -1,4 +1,4 @@
-package com.wlf.algorithm.array;
+package com.wlf.algorithm.chapter1.array;
 
 import java.util.Arrays;
 import java.util.Comparator;

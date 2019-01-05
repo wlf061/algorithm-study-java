@@ -1,11 +1,7 @@
-package com.wlf.algorithm.array;
+package com.wlf.algorithm.chapter1.array;
 
-/**
- * 求数组的最长子序列（O（N*log(N)）的实现方法）,
- * 在生成dp 的时候使用O(N* log(N))算法
- */
-public class LongestSubsequence2 {
 
+public class LongestSubsequence1 {
     /***
      * 1. 增加辅助数组 ends[b]和right 变量。
      * 2. ends[b] 表示 长度为b+1 的递增子序列的最小结尾数是ends[b]; ends[0....right].ends 一定为
@@ -43,6 +39,32 @@ public class LongestSubsequence2 {
         return dp;
     }
 
+    /*
+    * 求数组的最长子序列（O（N*N）的实现方法）
+    * 获取dp[i]: 表示以arr[i]这个数结尾的情况下， 最长递增子序列的长度
+    * */
+    public int[] getdp1(int[]arr){
+        int[] dp = new int[arr.length];
+        for(int i=0; i < arr.length; i++){
+            dp[i] = 1;
+            for(int j=0; j < i; j++){
+                if(arr[i] > arr[j])
+                {
+                    dp[i] = Math.max(dp[i],dp[j]+1);
+                }
+            }
+        }
+        return dp;
+    }
+
+    /*
+    * 结合dp 和arr 来求出 最长子序列，
+    * 通过上面求解dp 的过程来获取子序列：
+    * 1. 遍历dp数组，找到最大值及位置k.那么这个最长子序列是以arr[k]结尾。
+    * 2. 如果对于某一个位置i， 既有 arr[i] < arr[k], 同时dp[i] == dp[k] -1, 说明arr[i]
+    * 可以作为最长递增子序列的倒数第二个数， 一次内推。
+    * */
+
     public int[] generateLIS(int[] arr, int[] dp){
         int len=0;
         int index=0;
@@ -68,7 +90,7 @@ public class LongestSubsequence2 {
         if(arr == null || arr.length == 0){
             return null;
         }
-        int[] dp = getdp2(arr);
+        int[] dp = getdp1(arr);
         return generateLIS(arr, dp);
     }
 
@@ -79,5 +101,4 @@ public class LongestSubsequence2 {
             System.out.println(value);
         }
     }
-
 }
