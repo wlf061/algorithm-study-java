@@ -1,4 +1,4 @@
-package com.wlf.algorithm;
+package com.wlf.algorithm.nlp.MaxEnt;
 
 /**维特比算法， 解决HMM 中的第二个问题
  * @author nancy.wang

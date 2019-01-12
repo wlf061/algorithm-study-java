@@ -1,4 +1,4 @@
-package com.wlf.algorithm.MaxEnt;
+package com.wlf.algorithm.nlp.MaxEnt;
 
 import java.io.BufferedReader;
 import java.io.File;

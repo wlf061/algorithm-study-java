@@ -1,4 +1,4 @@
-package com.wlf.algorithm.chapter1.DoublePointer;
+package com.wlf.algorithm.niukewang.chapter1.DoublePointer;
 
 /**
  * Refer:https://www.cnblogs.com/fisherinbox/p/5715017.html

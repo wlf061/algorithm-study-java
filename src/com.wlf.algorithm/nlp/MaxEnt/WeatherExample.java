@@ -1,6 +1,6 @@
-package com.wlf.algorithm;
-import static com.wlf.algorithm.WeatherExample.Activity.*;
-import static com.wlf.algorithm.WeatherExample.Weather.*;
+package com.wlf.algorithm.nlp.MaxEnt;
+import static com.wlf.algorithm.nlp.MaxEnt.WeatherExample.Activity.*;
+import static com.wlf.algorithm.nlp.MaxEnt.WeatherExample.Weather.*;
 
 
 /**

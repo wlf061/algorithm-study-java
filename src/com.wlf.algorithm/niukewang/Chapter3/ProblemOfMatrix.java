@@ -1,6 +1,6 @@
-package com.wlf.algorithm.Chapter3;
+package com.wlf.algorithm.niukewang.Chapter3;
 
-import com.wlf.algorithm.chapter2.SubArray2;
+import com.wlf.algorithm.niukewang.chapter2.SubArray2;
 
 /**
  * 牛课堂算法精讲直播讲座（2016） > 第三章 > 牛课堂第三章

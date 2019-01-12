@@ -1,4 +1,4 @@
-package com.wlf.algorithm.chapter1.DoublePointer;
+package com.wlf.algorithm.niukewang.chapter1.DoublePointer;
 
 /**
  * 类似 leetCode42 双向指针的问题

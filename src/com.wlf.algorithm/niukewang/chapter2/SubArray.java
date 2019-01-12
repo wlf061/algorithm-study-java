@@ -1,4 +1,4 @@
-package com.wlf.algorithm.chapter2;
+package com.wlf.algorithm.niukewang.chapter2;
 
 /**
  * 牛课堂算法精讲直播讲座（2016） 左程云> 第二章 > 牛课堂第二章

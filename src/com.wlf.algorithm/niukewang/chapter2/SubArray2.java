@@ -1,4 +1,4 @@
-package com.wlf.algorithm.chapter2;
+package com.wlf.algorithm.niukewang.chapter2;
 
 import java.util.HashMap;
 
