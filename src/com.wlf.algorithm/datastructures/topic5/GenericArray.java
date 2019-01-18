@@ -1,11 +1,13 @@
 package com.wlf.algorithm.datastructures.topic5;
 
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 
 /**
  * Created by NJLT004 on 2019/1/13.
  */
 public class GenericArray<T> {
+
     private T data[];
     private int size;
 
@@ -112,13 +114,14 @@ public class GenericArray<T> {
 
     public static void main(String[] str){
 
-        GenericArray array = new GenericArray<Integer>(5);
+/*        GenericArray array = new GenericArray<Integer>(5);
         array.add(0, 3);
         array.add(0, 4);
         array.add(1, 5);
         array.add(3, 9);
         array.add(3, 10);
-        System.out.println(array.toString());
+        System.out.println(array.toString());*/
+        System.out.println(3>>1);
     }
 }
 
