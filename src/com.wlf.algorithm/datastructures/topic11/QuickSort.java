@@ -1,6 +1,6 @@
 package com.wlf.algorithm.datastructures.topic11;
 
-import static com.wlf.algorithm.datastructures.topic11.MergeSort.mergeSort;
+import java.util.Arrays;
 
 /**
  * 快速排序： 理解快速排序的重点是 partition()分区函数和递归。
@@ -55,5 +55,6 @@ public class QuickSort {
         for (int index = 0; index < a.length; index++) {
             System.out.println(a[index]);
         }
+        Arrays.sort();
     }
 }
