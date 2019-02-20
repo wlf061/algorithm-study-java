@@ -6,7 +6,7 @@ public class LongestSubsequence1 {
      * 1. 增加辅助数组 ends[b]和right 变量。
      * 2. ends[b] 表示 长度为b+1 的递增子序列的最小结尾数是ends[b]; ends[0....right].ends 一定为
      * 一个递增数组
-     * 为有效去，ends[right+1,....N-1]为无效区。
+     * 为有效区，ends[right+1,....N-1]为无效区。
      * 3. 遍历（ends 为递增，可以使用二分查找）：
      *     3.1 在遍历arr[i]的过程中，查找ends[0,...right-1],存在比arr[i]大的则可以用arr[i]替换掉。
      *     3.2 如果ends 中 都比 arr[i] 小，则有效区间 右移

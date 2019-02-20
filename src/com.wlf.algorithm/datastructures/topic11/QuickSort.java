@@ -55,6 +55,6 @@ public class QuickSort {
         for (int index = 0; index < a.length; index++) {
             System.out.println(a[index]);
         }
-        Arrays.sort();
+        //Arrays.sort();
     }
 }

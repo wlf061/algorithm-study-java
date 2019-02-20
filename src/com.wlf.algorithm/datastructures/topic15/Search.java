@@ -10,13 +10,13 @@ import static jdk.nashorn.internal.runtime.regexp.joni.Config.log;
  */
 public class Search {
 
-    public int bsearch(int[] a, int n, int value){
+    public static int bsearch(int[] a, int n, int value){
         int low=0;
         int high = n-1;
         while(low <= high){
             //如果low 和high 比较大，直接用(hight+low)/2 容易溢出, 改进的方法是将
             //mid 的计算方法 写成 low+(high-low)/2,性能优化到极致，就是 low + (high-low) >> 1
-            int mid = low + (high - low) >> 1;
+            int mid = low + ((high - low) >> 1);
             if(a[mid] == value){
                 return mid;
             } else if(a[mid] < value){
@@ -37,7 +37,7 @@ public class Search {
         if(low > high){
             return -1;
         }
-        int mid = low + (high-low) >> 1;
+        int mid = low + ((high-low) >> 1);
         if(a[mid] == value){
             return mid;
         } else if(a[mid] < value){
@@ -46,6 +46,12 @@ public class Search {
             return bsearchInternally(a, low, mid-1,value);
         }
 
+
+    }
+
+    public static void main(String[] str){
+        int[] nums = new int[] {1, 3, 3, 3, 3, 6, 7, 9, 12, 14, 18};
+        System.out.println(bsearch(nums, nums.length, 20));
 
     }
 

@@ -3,7 +3,13 @@ package com.wlf.algorithm.datastructures.topic6;
 import java.util.Scanner;
 
 /**
- * 类的描述
+ * LRU(Least Recently used) 最近最少使用策略;
+ * 链表头为最近访问的，链表尾部为未访问的。
+ * LRU 算法：
+ * 1.下次遍历的时候，在链表中查找，如果找到了，将该几点删除，并放到链表头部
+ * 2. 如果没在链表中，分两种情况：
+ *   2.1 如果链表空间足够，插入到链表头
+ *   2.2 如果链表空间不够，删除链表尾部元素，将元素插入链表头部
  *
  * @author nancy.wang
  * @Time 2019/1/14
